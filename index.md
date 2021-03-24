@@ -8,21 +8,28 @@ Table of content
 
 ### Git
 
+```
 git remote prune origin
 git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
+```
  
 ### Maven
 
+```
 mvn dependency:tree -Dverbose -Dincludes=[groupId]:[artifactId]:[type]:[version]
+```
 
 ### Docker
 
+```
 docker run -p 9000:8080 --name myTomcatContainer tomcat 
+```
 
 ### Base64
 
+```
 base64
-
+```
 
 
 You can use the [editor on GitHub](https://github.com/achatellier/wiki/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
