@@ -4,6 +4,17 @@ Table of content
 - [Tools](#Tools)
 
 
+## Libs
+
+### JVM
+
+#### java.util
+
+```
+joinToString(separator="")
+Integer.toBinaryString(int i)
+```
+
 ## Tools
 
 ### Git
