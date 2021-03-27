@@ -23,10 +23,13 @@ Table of content
 
 ### Spring
 
-#### Spring boot test
-
 ```
 @SpringBootTest provides an application context and allow the usage of dependency injection
+```
+
+```
+@RestController @GetMapping @PostMapping
+@PathVariable @RequestParam @RequestBody
 ```
 
 ### JVM
