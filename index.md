@@ -47,6 +47,8 @@ Integer.toBinaryString(int i)
 
 ### Kubernetes
 
+kubectl get po --namespace <nmsp>
+
 ### Gravitee
 
 ### Git
