@@ -46,15 +46,19 @@ Integer.toBinaryString(int i)
 ### RabbitMQ
 
 #### DLQ
-TTL/Queue capacity/Manual
-Set at the queue creation or dynamically via policy
-Binding on a dedicated dql exchange/routing-key
+* TTL/Queue capacity/Manual
+* Set at the queue creation or dynamically via policy
+* Binding on a dedicated dql exchange/routing-key
 #### Exchange
 #### Queue
 
-### Kubernetes
+### Kubernetes (orchestrator)
 
 kubectl get po --namespace <nmsp>
+
+#### Helm (package manager)
+
+client/server(Tiller)
 
 ### Gravitee
 
