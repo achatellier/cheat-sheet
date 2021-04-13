@@ -45,6 +45,8 @@ Integer.toBinaryString(int i)
 
 ### RabbitMQ
 
+#### Perftest for load testing
+
 #### DLQ
 * TTL/Queue capacity/Manual
 * Set at the queue creation or dynamically via policy
