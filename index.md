@@ -3,23 +3,6 @@ Table of content
 
 - [Tools](#Tools)
 
-## Architecture
-
-### DDD
-
-An approach where the domain remains at the center of everything
-
-### CQRS
-
-Command/Query segregation
-
-### Event sourcing
-
-One source of truth, multiple dedicated fast projections
-
-Retry strategy
-
-
 ## Libs
 
 ### Spring
@@ -94,4 +77,19 @@ echo -n "blabla" | base64
 echo -n "jhgtyk" | base64 -d
 ```
 
+## Architecture
+
+### DDD
+
+An approach where the domain remains at the center of everything
+
+### CQRS
+
+Command/Query segregation
+
+### Event sourcing
+
+One source of truth, multiple dedicated fast projections
+
+Retry strategy
 
