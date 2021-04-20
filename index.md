@@ -17,6 +17,9 @@ Command/Query segregation
 
 One source of truth, multiple dedicated fast projections
 
+Retry strategy
+
+
 ## Libs
 
 ### Spring
@@ -43,14 +46,15 @@ Integer.toBinaryString(int i)
 
 ### RabbitMQ
 
-#### Perftest for load testing
+load testing : PerfTest
 
 #### DLQ
 * TTL/Queue capacity/Manual
 * Set at the queue creation or dynamically via policy
 * Binding on a dedicated dql exchange/routing-key
 #### Exchange
-#### Queue
+fanout: broadcast ignoring routing key
+topic: use routing-key, flexible configuration  
 
 ### Kubernetes (orchestrator)
 
