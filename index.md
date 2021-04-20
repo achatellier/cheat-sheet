@@ -3,21 +3,19 @@ Table of content
 
 - [Tools](#Tools)
 
-## Patterns
+## Architecture
 
 ### DDD
 
+An approach where the domain remains at the center of everything
+
 ### CQRS
+
+Command/Query segregation
 
 ### Event sourcing
 
-### Visitor
-
-### Facade
-
-### Composition
-
-
+One source of truth, multiple dedicated fast projections
 
 ## Libs
 
