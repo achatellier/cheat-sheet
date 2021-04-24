@@ -7,14 +7,21 @@ Table of content
 
 ### Spring
 
+#### Test
+
 ```
 @SpringBootTest provides an application context and allow the usage of dependency injection
 ```
+
+#### Web
 
 ```
 @RestController @GetMapping @PostMapping
 @PathVariable @RequestParam @RequestBody
 ```
+
+#### RabbitMQ
+
 
 ### JVM
 
@@ -32,9 +39,11 @@ Integer.toBinaryString(int i)
 load testing : PerfTest
 
 #### DLQ
+* Not usefull for request/reply
 * TTL/Queue capacity/Manual
 * Set at the queue creation or dynamically via policy
 * Binding on a dedicated dql exchange/routing-key
+
 #### Exchange
 fanout: broadcast ignoring routing key
 topic: use routing-key, flexible configuration  
