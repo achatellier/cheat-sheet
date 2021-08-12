@@ -22,13 +22,12 @@ Table of content
 
 #### Reactor
 
+```
 just : static creation
 fromIterable
 merge 
-
 zip: take in order 
 withLatestFrom
-
 range(i, n) : integer flux
 interval(n seconds) : emit event each n sec
 take(n first)
@@ -36,23 +35,27 @@ skip(before n)
 filter
 map: 1 to 1 sync mapping
 flatMap: 1 to N potentially async mapping
-
+```
 
 ### Message Broker
 #### RabbitMQ
 
+```
 Queue
 Binding
 Exchange
 Routing-key
 Message header
+```
 
 #### Kafka
 
+```
 Topic
 Partition
 Index
 Registry
+```
 
 ### JVM
 
