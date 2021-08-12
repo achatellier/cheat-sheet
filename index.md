@@ -20,8 +20,39 @@ Table of content
 @PathVariable @RequestParam @RequestBody
 ```
 
+#### Reactor
+
+just : static creation
+fromIterable
+merge 
+
+zip: take in order 
+withLatestFrom
+
+range(i, n) : integer flux
+interval(n seconds) : emit event each n sec
+take(n first)
+skip(before n)
+filter
+map: 1 to 1 sync mapping
+flatMap: 1 to N potentially async mapping
+
+
+### Message Broker
 #### RabbitMQ
 
+Queue
+Binding
+Exchange
+Routing-key
+Message header
+
+#### Kafka
+
+Topic
+Partition
+Index
+Registry
 
 ### JVM
 
@@ -31,6 +62,7 @@ Table of content
 joinToString(separator="")
 Integer.toBinaryString(int i)
 ```
+
 
 ## Tools
 
@@ -56,7 +88,9 @@ kubectl get po --namespace <nmsp>
 
 client/server(Tiller)
 
-### Gravitee
+###Api-Management 
+ 
+#### Gravitee
 
 ### Git
 
@@ -88,9 +122,14 @@ echo -n "jhgtyk" | base64 -d
 
 ## Architecture
 
+### Streams
+
+Cold : won't start pumping until there's a subscriber et emit the whole dataset
+Hot : live data, begins pumping on connection, consumer receive only newest data
+
 ### DDD
 
-An approach where the domain remains at the center of everything
+Very dumb and simplified definition : An approach where the domain remains at the center of everything
 
 ### CQRS
 
