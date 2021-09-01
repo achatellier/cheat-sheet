@@ -120,19 +120,13 @@ Integer.toBinaryString(int i)
 
 ## Tools
 
-
-
 ### Kubernetes (orchestrator)
 
-kubectl get po --namespace <nmsp>
+kubectl get po --namespace nmsp
 
 #### Helm (package manager)
 
 client/server(Tiller)
-
-###Api-Management 
- 
-#### Gravitee
 
 ### Git
 
@@ -166,8 +160,8 @@ echo -n "jhgtyk" | base64 -d
 
 ### Streams
 
-Cold : won't start pumping until there's a subscriber et emit the whole dataset
-Hot : live data, begins pumping on connection, consumer receive only newest data
+* Cold : won't start pumping until there's a subscriber et emit the whole dataset
+* Hot : live data, begins pumping on connection, consumer receive only newest data
 
 ### DDD
 
