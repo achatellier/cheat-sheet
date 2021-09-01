@@ -7,6 +7,27 @@ Table of content
 
 ### Spring
 
+**@Bean**
+
+```
+@Configuration
+public class MyAppConfig {
+  @Bean
+  public DummyService dummyService(){
+    return new DummyServiceImpl();
+  }
+}
+```
+
+**@Component**
+specializations :
+
+**@Service** : Heart of an app
+**@Repository** : Handles data persistence
+**@Controller** : Handles requests and reponses
+
+Dependency injection : **@Autowired** Via a class field, a setter, the constructor (prefer for easy test)
+
 #### Test
 
 ```
@@ -19,6 +40,17 @@ Table of content
 @RestController @GetMapping @PostMapping
 @PathVariable @RequestParam @RequestBody
 ```
+
+#### Scopes
+
+Scope |	Description
+----- |------------
+singleton |	(default) A single bean instance
+prototype |	A bean instance per usage
+request |	A bean instance per HTTP request
+session |	A bean instance per HTTP session
+application |	A bean instance per Servlet Context
+websocket |	A bean instance per WebSocket
 
 #### Reactor
 
