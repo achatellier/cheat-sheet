@@ -36,12 +36,19 @@ Dependency injection : **@Autowired** Via a class field, a setter, the construct
 
 #### Web
 
-```
-@RestController @GetMapping @PostMapping
-@PathVariable @RequestParam @RequestBody
-```
+* @RestController 
+* @GetMapping 
+* @PostMapping
+* @PathVariable 
+* @RequestParam 
+* @RequestBody
 
 #### Scopes
+
+```
+@Bean
+@Scope("singleton")
+```
 
 Scope |	Description
 ----- |------------
@@ -52,42 +59,39 @@ session |	A bean instance per HTTP session
 application |	A bean instance per Servlet Context
 websocket |	A bean instance per WebSocket
 
+
+
 #### Reactor
 
-```
-just : static creation
-fromIterable
-merge 
-zip: take in order 
-withLatestFrom
-range(i, n) : integer flux
-interval(n seconds) : emit event each n sec
-take(n first)
-skip(before n)
-filter
-map: 1 to 1 sync mapping
-flatMap: 1 to N potentially async mapping
-```
+
+* just : static creation
+* fromIterable
+* merge 
+* zip: take in order 
+* withLatestFrom
+* range(i, n) : integer flux
+* interval(n seconds) : emit event each n sec
+* take(n first)
+* skip(before n)
+* filter
+* map: 1 to 1 sync mapping
+* flatMap: 1 to N potentially async mapping
+
 
 ### Message Broker
 #### RabbitMQ
 
-```
-Queue
-Binding
-Exchange
-Routing-key
-Message header
-```
+* Queue: a buffer that stores messages
+* Binding: rules that exchanges use to route messages to queues
+* Exchange: takes a message from producers and routes it into zero or more queues
+* Routing-key: key used in routing :D
 
 #### Kafka
 
-```
 Topic
 Partition
 Index
 Registry
-```
 
 ### JVM
 
