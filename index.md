@@ -20,10 +20,13 @@ public class MyAppConfig {
 ```
 
 **@Component**
+
 specializations :
 
 **@Service** : Heart of an app
+
 **@Repository** : Handles data persistence
+
 **@Controller** : Handles requests and reponses
 
 Dependency injection : **@Autowired** Via a class field, a setter, the constructor (prefer for easy test)
@@ -107,7 +110,7 @@ Integer.toBinaryString(int i)
 
 ### RabbitMQ
 
-load testing : PerfTest
+load testing : PerfTest for very very simple use cases
 
 #### DLQ
 * Not usefull for request/reply
