@@ -66,7 +66,6 @@ websocket |	A bean instance per WebSocket
 
 #### Reactor
 
-
 * just : static creation
 * fromIterable
 * merge 
@@ -84,10 +83,24 @@ websocket |	A bean instance per WebSocket
 ### Message Broker
 #### RabbitMQ
 
+load testing : PerfTest for very very simple use cases
+
+
 * Queue: a buffer that stores messages
 * Binding: rules that exchanges use to route messages to queues
 * Exchange: takes a message from producers and routes it into zero or more queues
 * Routing-key: key used in routing :D
+
+##### DLQ
+
+* Not usefull for request/reply
+* TTL/Queue capacity/Manual
+* Set at the queue creation or dynamically via policy
+* Binding on a dedicated dql exchange/routing-key
+
+##### Exchange
+* fanout: broadcast ignoring routing key
+* topic: use routing-key, flexible configuration  
 
 #### Kafka
 
@@ -105,22 +118,9 @@ joinToString(separator="")
 Integer.toBinaryString(int i)
 ```
 
-
 ## Tools
 
-### RabbitMQ
 
-load testing : PerfTest for very very simple use cases
-
-#### DLQ
-* Not usefull for request/reply
-* TTL/Queue capacity/Manual
-* Set at the queue creation or dynamically via policy
-* Binding on a dedicated dql exchange/routing-key
-
-#### Exchange
-fanout: broadcast ignoring routing key
-topic: use routing-key, flexible configuration  
 
 ### Kubernetes (orchestrator)
 
