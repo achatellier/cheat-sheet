@@ -79,6 +79,13 @@ websocket |	A bean instance per WebSocket
 * map: 1 to 1 sync mapping
 * flatMap: 1 to N potentially async mapping
 
+### Processing engine
+#### Flink
+Stream based
+
+#### Spark
+Micro-batching based
+Delayed result + artificial spiky load
 
 ### Message Broker
 #### RabbitMQ
