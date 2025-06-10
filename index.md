@@ -125,6 +125,12 @@ joinToString(separator="")
 Integer.toBinaryString(int i)
 ```
 
+### Kotlin
+
+* map: 1 to 1 
+* flatMap: 1 to N
+* Int.(String) -> Unit: function literals with receiver
+
 ## Tools
 
 ### Kubernetes (orchestrator)
