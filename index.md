@@ -62,14 +62,12 @@ session |	A bean instance per HTTP session
 application |	A bean instance per Servlet Context
 websocket |	A bean instance per WebSocket
 
-
-
 #### Reactor
 
 * just : static creation
 * fromIterable
 * merge 
-* zip: take in order 
+* zip: merge two streams and take data in order 
 * withLatestFrom
 * range(i, n) : integer flux
 * interval(n seconds) : emit event each n sec
@@ -130,6 +128,34 @@ Integer.toBinaryString(int i)
 * map: 1 to 1 
 * flatMap: 1 to N
 * Int.(String) -> Unit: function literals with receiver
+
+#### Coroutines
+
+* runBlocking: gateway between the suspendable and non-suspendable world
+* Channel: acts like a pipe or a queue where one coroutine can send data and another can receive it
+
+
+
+## Asynchronous Operations
+
+### Backpressure
+A mechanism where the consumer can signal to the producer how much data it can handle, preventing the consumer from being overwhelmed
+
+### Handling a Stream of Multiple Values (0 to N items)
+* Reactor: Flux
+* Kotlin: Flow
+* Java: Flow API (Java 9+)
+
+### Handling a Single Value (0 to 1 item)
+* Reactor: Mono
+* Java: CompletableFuture
+* Kotlin: Deferred
+
+Concern	Java (Standard)	Project Reactor	Kotlin
+Sync Stream (Multiple Items)	Stream	(Not applicable)	Sequence
+Async Stream (Multiple Items)	java.util.concurrent.Flow	Flux	Flow
+Async Single Value	CompletableFuture	Mono	Deferred
+Coroutine Communication	(Not applicable)	(Not applicable)	Channel
 
 ## Tools
 
